@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@theme {
+  --color-brand: #0B5D3B;
+  --color-brand-dark: #08452c;
+  --color-accent: #F5A623;
+  --color-paper: #FAF8F3;
+  --color-ink: #1F2933;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.maplibregl-popup-content {
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
