@@ -4,7 +4,7 @@ import { buildMockPlan } from '../mock/planResponse'
 const USE_MOCK = false
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: 'https://routing-back.onrender.com/',
 })
 
 export async function planTrip(payload) {
